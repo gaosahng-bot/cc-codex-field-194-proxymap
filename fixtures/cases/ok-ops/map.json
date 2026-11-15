@@ -1,0 +1,12 @@
+{
+  "sni": "api.ops.example",
+  "client_cn": "edge.ops.example",
+  "upstream": "https://ops-svc:8443",
+  "strip_headers": [
+    "x-forwarded-host"
+  ],
+  "nonce": "n-ok-ops",
+  "iat": 1781783975,
+  "kid": "k-active",
+  "sig": "cNmhgUy5TiTWPCGhHEiRYIpmg0jroJHg6srRxywCk3o"
+}

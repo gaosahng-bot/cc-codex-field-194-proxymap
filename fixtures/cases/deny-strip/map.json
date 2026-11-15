@@ -1,0 +1,12 @@
+{
+  "sni": "api.pay.example",
+  "client_cn": "edge.pay.example",
+  "upstream": "https://pay-svc:8443",
+  "strip_headers": [
+    "x-forwarded-host"
+  ],
+  "nonce": "n-deny-strip",
+  "iat": 1781783975,
+  "kid": "k-active",
+  "sig": "uf1xu0__whIhHiAmZN3nmQq6eJnojpgbWkL-DB5kxXI"
+}

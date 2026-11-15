@@ -1,0 +1,32 @@
+{
+  "routes": {
+    "api.pay.example": {
+      "cn_suffix": ".pay.example",
+      "upstreams": [
+        "https://pay-svc:8443",
+        "https://pay-svc-b:8443"
+      ],
+      "must_strip": [
+        "x-forwarded-host",
+        "x-original-url"
+      ]
+    },
+    "api.ops.example": {
+      "cn_suffix": ".ops.example",
+      "upstreams": [
+        "https://ops-svc:8443"
+      ],
+      "must_strip": [
+        "x-forwarded-host"
+      ]
+    }
+  },
+  "upstream_deny_substrings": [
+    "@",
+    "..",
+    " "
+  ],
+  "require_https_upstream": true,
+  "clock_skew_seconds": 60,
+  "max_age_seconds": 300
+}
